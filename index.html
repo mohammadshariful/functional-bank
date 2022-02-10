@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-5xl mt-14">
+        Welcome to My <span class="font-semibold text-purple-600">Bank</span>
+      </h1>
+    </header>
+    <main class="mt-4">
+      <section class="bg-green-100 w-3/4 p-8 mx-auto">
+        <h3 class="text-2xl mb-4">Please Login</h3>
+        <form>
+          <input
+            id="user-email"
+            class="border block border-gray-400 rounded w-3/4 mb-4 px-2"
+            type="text"
+            placeholder="example@gmail.com"
+          />
+          <input
+            id="user-password"
+            class="border block border-gray-400 rounded w-3/4 mb-4 px-2"
+            type="password"
+            placeholder="secret"
+          />
+          <label for="checkbox">
+            <input type="checkbox" id="checkbox" onclick="checkboxFunc()" />
+            Show Password
+          </label>
+          <br />
+          <button
+            type="button"
+            id="login-button"
+            class="bg-yellow-600 mt-4 px-4 py-2 rounded text-white font-medium"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+    <script src="./app/login.js"></script>
+  </body>
+</html>
