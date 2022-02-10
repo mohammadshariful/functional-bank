@@ -31,7 +31,7 @@ function totalUpdateBalance(totalBalanceId, currentInputAmount, isAdd) {
   const totalBalance = document.getElementById(totalBalanceId);
   const previusBalance = totalBalance.innerText;
   const currentBalance = parseFloat(previusBalance);
-  if (isAdd === true) {
+  if (isAdd == "true") {
     totalBalance.innerText = currentBalance + currentInputAmount;
   } else {
     totalBalance.innerText = currentBalance - currentInputAmount;
